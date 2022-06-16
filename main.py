@@ -8,7 +8,7 @@ def connect_to_db(conn=None) -> mysql.connector.connection_cext.CMySQLConnection
     print('Подключение к БД')
     try:
         conn = mysql.connector.connect(user='root',
-                                       password='24871tel',
+                                       password='*',
                                        host='127.0.0.1',
                                        database='department_of_information_technology_and_learning')
     except mysql.connector.DatabaseError:
